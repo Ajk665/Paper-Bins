@@ -3,7 +3,7 @@ class Bin{
      
    
     var options = {
-        static: true,
+        isStatic: true,
         restitution: 0.01,
         friction: 1,
         density: 1
