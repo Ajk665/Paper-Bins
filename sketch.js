@@ -24,8 +24,8 @@ function setup() {
 	ground = new Ground(400,575,800,90);
 	ball = new Ball(200,565,20,20);
 	bin1 = new Bin(575,565,100,20);
-	bin2 = new Bin(635,515,20,100);
-	bin3 = new Bin(515,515,20,100);
+	bin2 = new Bin(635,485,20,100);
+	bin3 = new Bin(515,485,20,100);
 
 	Engine.run(engine);
   
@@ -41,13 +41,9 @@ function draw() {
   bin1.display();
  bin2.display();
  bin3.display();
- ifPressed
 }
 
-
-function ifPressed(){
-	if(keyDown("rightArrow")){
-		Matter.Body.applyForce(ball.body,ball.body.position,{x=85, y=85});
-		Matter.Body.setStatic(ball,false);
-	}
-	}
+function keyPressed(){
+	 if (keyCode === RIGHT_ARROW){
+		 Matter.Body.applyForce(ball.body,ball.body.position,{x:85,y:-85}); } 
+}
