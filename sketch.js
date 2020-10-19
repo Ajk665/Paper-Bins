@@ -23,7 +23,7 @@ function setup() {
 	//Create the Bodies Here.
 	ground = new Ground(400,575,800,90);
 	ball = new Ball(200,565,20,20);
-	bin1 = new Bin(575,565,100,20);
+	bin1 = new Bin(575,525,100,20);
 	bin2 = new Bin(635,485,20,100);
 	bin3 = new Bin(515,485,20,100);
 
